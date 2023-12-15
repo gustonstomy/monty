@@ -13,7 +13,7 @@ void v_sub(stack_t **head, unsigned int increament)
 	{
 		sub = ((*head)->next->n - (*head)->n);
 		(*head)->next->n = sub;
-		_pop(head, 0);
+		v_pop(head, 0);
 	}
 	else
 	{
