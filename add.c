@@ -1,18 +1,18 @@
 #include "monty.h"
 /**
- * v_add - adds element to stack
+ * _add - adds element to stack
  * @head: pointer to pointer in stack
  * @increament: element to add
  * Return: Nothing
  */
-void v_add(stack_t **head, unsigned int increament)
+void _add(stack_t **head, unsigned int increament)
 {
 	int total = 0;
 
 	if (*head && (*head)->next)
 	{
 		total = ((*head)->n + (*head)->next->n);
-		v_pop(head, 0);
+		_pop(head, 0);
 		(*head)->n = total;
 	}
 	else
