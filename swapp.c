@@ -21,12 +21,12 @@ void _swap(stack_t **head, unsigned int increament)
 		else
 		{
 			STATUS[0] = 'F';
-			dprintf(2, "L%d: can't swap, stack too short\n", increament);
+			vprintf(2, "L%d: can't swap, stack too short\n", increament);
 		}
 	}
 	else
 	{
 		STATUS[0] = 'F';
-		dprintf(2, "L%d: can't swap, stack too short\n", increament);
+		vprintf(2, "L%d: can't swap, stack too short\n", increament);
 	}
 }
