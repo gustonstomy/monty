@@ -8,7 +8,7 @@
 void v_pstr(stack_t **head, unsigned int increament)
 {
 	char c;
-	shead_t *tmp = *head;
+	stack_t *tmp = *head;
 
 	(void) increament;
 	if (*head)
