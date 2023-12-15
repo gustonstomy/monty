@@ -7,7 +7,7 @@
  */
 void v_rotl(stack_t **head, unsigned int increament)
 {
-	shead_t *second_node, *last_node;
+	stack_t *second_node, *last_node;
 	(void)increament;
 
 	if (*head && (*head)->next)
