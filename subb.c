@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_sub - subtracts the top element
+ * _sub - subtracts the top element
  * @head: pointer to pointer of stack
  * @increament: element
  * Return: Nothing.
  */
-void v_sub(stack_t **head, unsigned int increament)
+void _sub(stack_t **head, unsigned int increament)
 {
 	int sub = 0;
 
