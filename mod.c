@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_mod - divide two first elements of the stack
+ * _mod - divide two first elements of the stack
  * @head:pointer to pointer to stack
  * @increament: value for includein the stack
  * Return: Nothing.
  */
-void v_mod(stack_t **head, unsigned int increament)
+void _mod(stack_t **head, unsigned int increament)
 {
 
 	int d = 0;
@@ -20,7 +20,7 @@ void v_mod(stack_t **head, unsigned int increament)
 		}
 		d = ((*head)->next->n % (*head)->n);
 		(*head)->next->n = d;
-		v_pop(head, 0);
+		_pop(head, 0);
 	}
 	else
 	{
