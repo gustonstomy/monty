@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_pstr - print first word from stack
+ * _pstr - print first word from stack
  * @head: pointer to pointer to stack
  * @increament: element
  * Return: Nothing.
  */
-void v_pstr(stack_t **head, unsigned int increament)
+void _pstr(stack_t **head, unsigned int increament)
 {
 	char c;
 	stack_t *tmp = *head;
