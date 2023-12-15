@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_add_stack - adds new node to stack
+ * _add_stack - adds new node to stack
  * @head: pointer to pointer in stack
  * @n: element
  * Return: Nothing
  */
-stack_t *v_add_stack(stack_t **head, const int n)
+stack_t *_add_stack(stack_t **head, const int n)
 {
 	stack_t *current, *previ;
 
