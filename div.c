@@ -15,7 +15,7 @@ void v_div(stack_t **head, unsigned int increament)
 		{
 			STATUS[0] = 'F';
 			dprintf(2, "L%d: division by zero\n", increament);
-			retrun;
+			return;
 		}
 		d = ((*head)->next->n / (*head)->n);
 		(*head)->next->n = d;
