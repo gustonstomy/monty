@@ -19,13 +19,13 @@ void _pchar(stack_t **head, unsigned int increament)
 		else
 		{
 			STATUS[0] = 'F';
-			vprintf(2, "L%d: can't pchar, value out of range\n", increament);
+			printf("L%d: can't pchar, value out of range\n", increament);
 			return;
 		}
 	}
 	else
 	{
 		STATUS[0] = 'F';
-		vprintf(2, "L%d: can't pchar, stack empty\n", increament);
+		printf("L%d: can't pchar, stack empty\n", increament);
 	}
 }
