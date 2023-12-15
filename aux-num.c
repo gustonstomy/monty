@@ -40,7 +40,7 @@ int v_char_to_number(char *strn, int *number)
 		}
 		else
 		{
-			retrun(1);
+			return(1);
 		}
 	}
 	num *= minus;
