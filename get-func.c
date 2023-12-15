@@ -1,13 +1,13 @@
 #include "monty.h"
 /**
- * _get_function_stack - Gets a function to use.
+ * get_function_stack - Gets a function to use.
  * @tokens: An Array of tokens.
  * @head: The stack.
  * @increament: numbers of line in the file
  * Return: Nothing.
  */
 
-int _get_function_stack(char **tokens, stack_t **head, unsigned int increament)
+int get_function_stack(char **tokens, stack_t **head, unsigned int increament)
 {
 	instruction_t ops[] = { {"push", _push}, {"pall", _pall}, {"pint", _pint},
 		{"pop", _pop}, {"swap", _swap}, {"add", _add}, {"sub", _sub},
