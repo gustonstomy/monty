@@ -14,7 +14,7 @@ char *custom_getline(FILE *file) {
         exit(EXIT_FAILURE);
     }
 
-    int position = 0, int bufferSize = INITIAL_BUFFER_SIZE, int c;
+    int position = 0, bufferSize = INITIAL_BUFFER_SIZE, c;
 
     if (!buffer) {
         fprintf(stderr, "Unable to allocate buffer\n");
