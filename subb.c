@@ -18,6 +18,6 @@ void _sub(stack_t **head, unsigned int increament)
 	else
 	{
 		STATUS[0] = 'F';
-		vprintf(2, "L%d: can't sub, stack too short\n", increament);
+		printf("L%d: can't sub, stack too short\n", increament);
 	}
 }
