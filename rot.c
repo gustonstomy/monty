@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_rotl - it rotates stack to top.
+ * _rotl - it rotates stack to top.
  * @head: pointer to pointer to stack
  * @increament: element
  * Return: Nothing.
  */
-void v_rotl(stack_t **head, unsigned int increament)
+void _rotl(stack_t **head, unsigned int increament)
 {
 	stack_t *second_node, *last_node;
 	(void)increament;
