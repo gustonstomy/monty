@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_pop - to delete the first element
+ * _pop - to delete the first element
  * @head: pointer to  pointer to the stack
  * @increament: value value to print
  * Return: Nothing.
  */
-void v_pop(stack_t **head, unsigned int increament)
+void _pop(stack_t **head, unsigned int increament)
 {
 	stack_t *temp;
 
