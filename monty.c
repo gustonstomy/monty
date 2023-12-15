@@ -28,25 +28,25 @@ int main(int argc, char *argv[])
 	while ((getline(&buffer, &size, fd)) != -1)
 	{
 		tokens = NULL, lines++;
-		v_ts_handler(buffer);
+		ts_handler(buffer);
 		if (strcmp(buffer, "\n") != 0)
-		{	tokens = v_strtok(tokens, buffer);
-			gf = _get_function_stack(tokens, &stack, lines);
+		{	tokens = _strtok(tokens, buffer);
+			gf = get_function_stack(tokens, &stack, lines);
 			if (gf == 1)
-			{	free(tokens), free(buffer), v_free_stack(&stack), fclose(fd);
+			{	free(tokens), free(buffer), free_stack(&stack), fclose(fd);
 				dprintf(2, "L%d: usage: push integer\n", lines), exit(EXIT_FAILURE);
 			}
 			if (gf == 2)
 			{	dprintf(2, "L%d: unknown instruction %s\n", lines, tokens[0]);
-				free(buffer), v_free_stack(&stack), fclose(fd);
+				free(buffer), free_stack(&stack), fclose(fd);
 				free(tokens), exit(EXIT_FAILURE);
 			}
 			if (gf == 3)
-			{	free(buffer), v_free_stack(&stack), fclose(fd);
+			{	free(buffer), free_stack(&stack), fclose(fd);
 				free(tokens), exit(EXIT_FAILURE);
 			} free(tokens);
 		}
 	}
-	free(buffer), v_free_stack(&stack), fclose(fd);
+	free(buffer), free_stack(&stack), fclose(fd);
 	return (0);
 }
