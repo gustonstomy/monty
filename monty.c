@@ -14,9 +14,7 @@ char *custom_getline(FILE *file) {
         exit(EXIT_FAILURE);
     }
 
-    int position = 0;
-    int bufferSize = INITIAL_BUFFER_SIZE;
-    int c;
+    int position = 0, int bufferSize = INITIAL_BUFFER_SIZE, int c;
 
     if (!buffer) {
         fprintf(stderr, "Unable to allocate buffer\n");
@@ -79,10 +77,10 @@ int main(int argc, char *argv[]) {
 			gf = get_function_stack(tokens, &stack, lines);
 			if (gf == 1)
 			{	free(tokens), free(buffer), free_stack(&stack), fclose(fd);
-				dprintf(2, "L%d: usage: push integer\n", lines), exit(EXIT_FAILURE);
+				printf("L%d: usage: push integer\n", lines), exit(EXIT_FAILURE);
 			}
 			if (gf == 2)
-			{	dprintf(2, "L%d: unknown instruction %s\n", lines, tokens[0]);
+			{	printf("L%d: unknown instruction %s\n", lines, tokens[0]);
 				free(buffer), free_stack(&stack), fclose(fd);
 				free(tokens), exit(EXIT_FAILURE);
 			}
