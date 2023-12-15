@@ -70,16 +70,27 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
 
-    while ((buffer = custom_getline(fd)) != NULL) {
-        lines++;
-        // Your logic here using buffer as the line read from the file
-
-        if (strcmp(buffer, "\n") != 0) {
-            // Tokenization logic if needed
-            // Example: tokens = strtok(buffer, " ");
-        }
-
-        free(buffer);
+    while ((buffer = custom_getline(fd)) != NULL)
+    {
+        tokens = NULL, lines++;
+		ts_handler(buffer);
+		if (strcmp(buffer, "\n") != 0)
+		{	tokens = _strtok(tokens, buffer);
+			gf = get_function_stack(tokens, &stack, lines);
+			if (gf == 1)
+			{	free(tokens), free(buffer), free_stack(&stack), fclose(fd);
+				dprintf(2, "L%d: usage: push integer\n", lines), exit(EXIT_FAILURE);
+			}
+			if (gf == 2)
+			{	dprintf(2, "L%d: unknown instruction %s\n", lines, tokens[0]);
+				free(buffer), free_stack(&stack), fclose(fd);
+				free(tokens), exit(EXIT_FAILURE);
+			}
+			if (gf == 3)
+			{	free(buffer), free_stack(&stack), fclose(fd);
+				free(tokens), exit(EXIT_FAILURE);
+			} free(tokens);
+		}
     }
 
     fclose(fd);
