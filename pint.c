@@ -12,6 +12,6 @@ void _pint(stack_t **head, unsigned int increament)
 	else
 	{
 		STATUS[0] = 'F',
-			dprintf(2, "L%d: can't pint, stack empty\n", increament);
+			vprintf(2, "L%d: can't pint, stack empty\n", increament);
 	}
 }
