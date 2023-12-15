@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * _char_to_number - it converts char to int
+ * char_to_number - it converts char to int
  * @strn: string to be converted to an int
  * @number: pointer to input
  * Return: string int format
  */
-int _char_to_number(char *strn, int *number)
+int char_to_number(char *strn, int *number)
 {
 	unsigned int i = 0, digits = 1, j = 0, temp = 0;
 	int minus = 1, num = 0;
