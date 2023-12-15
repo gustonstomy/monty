@@ -10,11 +10,10 @@
 int _get_function_stack(char **tokens, stack_t **head, unsigned int increament)
 {
 	instruction_t ops[] = { {"push", v_push}, {"pall", v_pall}, {"pint", v_pint},
-		{"pop", v_pop}, {"swap", v_swap}, {"add", v_add}, {"sub", v_sub},
+		{"pop", v_pop}, {"swap", v_swap}, {"add", v_add}, {"sub", _sub},
 		{"div", v_div}, {"mul", v_mul}, {"mod", v_mod}, {"pchar", v_pchar},
-		{"pstr", v_pstr}, {"rotl", v_rotl}, {"rotr", v_rotr}, {"head", head},
-		{"queue", v_queue}, {"nop", v_nop}, {"\n", v_nop}, {"stack", if_stack},
-		{NULL, NULL} };
+		{"pstr", v_pstr}, {"rotl", v_rotl}, {"rotr", v_rotr}, {"stack", if_stack},
+		{"queue", v_queue}, {"nop", v_nop}, {"\n", v_nop}, {NULL, NULL} };
 	int i = 0, j = 0, find_func = 0, number = 0, out = 0;
 
 	for (j = 0; tokens[j]; j++)
