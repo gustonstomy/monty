@@ -15,7 +15,7 @@ void _mod(stack_t **head, unsigned int increament)
 		if ((*head)->n == 0)
 		{
 			STATUS[0] = 'F';
-			vprintf(2, "L%d: division by zero\n", increament);
+			printf("L%d: division by zero\n", increament);
 			return;
 		}
 		d = ((*head)->next->n % (*head)->n);
@@ -25,6 +25,6 @@ void _mod(stack_t **head, unsigned int increament)
 	else
 	{
 		STATUS[0] = 'F';
-		vprintf(2, "L%d: can't mod, stack too short\n", increament);
+		printf("L%d: can't mod, stack too short\n", increament);
 	}
 }
