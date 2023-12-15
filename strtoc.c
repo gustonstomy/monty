@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_strtok - tokens of a string.
+ * _strtok - tokens of a string.
  * @tok: Array of token
  * @strn: input text from
  * Return: Exit statu
  */
-char **v_strtok(char **tok, char *strn)
+char **_strtok(char **tok, char *strn)
 {
 	char *token = NULL;
 	int i = 0;
