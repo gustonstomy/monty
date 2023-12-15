@@ -7,8 +7,8 @@
  */
 void v_pint(stack_t **head, unsigned int increament)
 {
-	if (*stack)
-		printf("%d\n", (*stack)->n);
+	if (*head)
+		printf("%d\n", (*head)->n);
 	else
 	{
 		STATUS[0] = 'F',
