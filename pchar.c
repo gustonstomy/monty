@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_pchar - it printsASCII char
+ * _pchar - it printsASCII char
  * @head: pointer to pointer in stack
  * @increament: element
  * Return: Nothing
  */
-void v_pchar(stack_t **head, unsigned int increament)
+void _pchar(stack_t **head, unsigned int increament)
 {
 	char cha;
 
