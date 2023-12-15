@@ -65,5 +65,6 @@ void v_swap(stack_t **head, unsigned int increament);
 void v_add(stack_t **head, unsigned int increament);
 void v_nop(stack_t **head, unsigned int increament);
 void v_pchar(stack_t **head, unsigned int increament);
+void v_sub(stack_t **head, unsigned int increament);
 
 #endif
