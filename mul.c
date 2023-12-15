@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_mul - it multiplies two elements of stack
+ * _mul - it multiplies two elements of stack
  * @head:pointer to pointer to stack
  * @increament: element
  * Return: Nothing.
  */
-void v_mul(stack_t **head, unsigned int increament)
+void _mul(stack_t **head, unsigned int increament)
 {
 	int mul = 0;
 
@@ -13,7 +13,7 @@ void v_mul(stack_t **head, unsigned int increament)
 	{
 		mul = ((*head)->next->n * (*head)->n);
 		(*head)->next->n = mul;
-		v_pop(head, 0);
+		_pop(head, 0);
 	}
 	else
 	{
