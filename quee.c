@@ -9,6 +9,6 @@ void v_queue(stack_t **head, unsigned int increament)
 {
 	(void)head, (void)increament;
 
-	if (if_head)
-		if_head = 0;
+	if (if_stack)
+		if_stack = 0;
 }
