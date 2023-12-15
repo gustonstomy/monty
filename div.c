@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_div - it pops the stack
+ * _div - it pops the stack
  * @head: pointer to pointer to sstack
  * @increament: element in stack
  * Return: Nothing.
  */
-void v_div(stack_t **head, unsigned int increament)
+void _div(stack_t **head, unsigned int increament)
 {
 	int d = 0;
 
@@ -19,7 +19,7 @@ void v_div(stack_t **head, unsigned int increament)
 		}
 		d = ((*head)->next->n / (*head)->n);
 		(*head)->next->n = d;
-		v_pop(head, 0);
+		_pop(head, 0);
 	}
 	else
 	{
