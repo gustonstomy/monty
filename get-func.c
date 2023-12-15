@@ -9,11 +9,11 @@
 
 int _get_function_stack(char **tokens, stack_t **head, unsigned int increament)
 {
-	instruction_t ops[] = { {"push", v_push}, {"pall", v_pall}, {"pint", v_pint},
-		{"pop", v_pop}, {"swap", v_swap}, {"add", v_add}, {"sub", v_sub},
-		{"div", v_div}, {"mul", v_mul}, {"mod", v_mod}, {"pchar", v_pchar},
-		{"pstr", v_pstr}, {"rotl", v_rotl}, {"rotr", v_rotr},
-		{"queue", v_queue}, {"nop", v_nop}, {"\n", v_nop}, {NULL, NULL} };
+	instruction_t ops[] = { {"push", _push}, {"pall", _pall}, {"pint", _pint},
+		{"pop", _pop}, {"swap", _swap}, {"add", _add}, {"sub", _sub},
+		{"div", _div}, {"mul", _mul}, {"mod", _mod}, {"pchar", _pchar},
+		{"pstr", _pstr}, {"rotl", _rotl}, {"rotr", _rotr},
+		{"queue", _queue}, {"nop", _nop}, {"\n", _nop}, {NULL, NULL} };
 	int i = 0, j = 0, find_func = 0, number = 0, out = 0;
 
 	for (j = 0; tokens[j]; j++)
@@ -26,7 +26,7 @@ int _get_function_stack(char **tokens, stack_t **head, unsigned int increament)
 				{
 					if (!tokens[j + 1])
 						return (1);
-					out = v_char_to_number(tokens[j + 1], &number);
+					out = char_to_number(tokens[j + 1], &number);
 					if (out)
 						return (1);
 					if (!number || atoi(tokens[j + 1]) != 0)
