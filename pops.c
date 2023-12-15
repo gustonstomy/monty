@@ -12,7 +12,7 @@ void _pop(stack_t **head, unsigned int increament)
 	if (!*head)
 	{
 		STATUS[0] = 'F';
-		vprintf(2, "L%d: can't pop an empty stack\n", increament);
+		printf("L%d: can't pop an empty stack\n", increament);
 		return;
 	}
 	temp = (*head)->next;
