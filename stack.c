@@ -9,6 +9,6 @@ void v_stack(stack_t **head, unsigned int increadment)
 {
 	(void)head, (void)increadment;
 
-	if (!if_head)
-		if_head = 1;
+	if (!if_stack)
+		if_stack = 1;
 }
