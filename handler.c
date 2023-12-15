@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * v_ts_handler - handler tabs and spaces for functions.
+ * ts_handler - handler tabs and spaces for functions.
  * @ptr_line: pointer input for char.
  * Return: Nothing.
  */
 
-void v_ts_handler(char *ptr_line)
+void ts_handler(char *ptr_line)
 {
 	char *line = malloc((strlen(ptr_line) + 1) * sizeof(char));
 	int i = 0, j = 0;
