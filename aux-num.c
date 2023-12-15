@@ -59,11 +59,7 @@ unsigned int _isnumber(char *strn)
 	int i;
 
 	for (i = 0; strn[i]; i++)
-	{
 		if (!isdigit(strn[i]))
-		{
 			return (0);
-		}
-		return(1);
-	}
+	return(1);
 }
