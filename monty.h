@@ -50,7 +50,7 @@ unsigned int _isnumber(char *str);
 void v_mod(stack_t **head, unsigned int increament);
 void v_ts_handler(char *ptr_line);
 void v_mul(stack_t **head, unsigned int increament);
-void v_pstr(sstack_t **head, unsigned int increament);
+void v_pstr(stack_t **head, unsigned int increament);
 char **v_strtok(char **tok, char *strn);
 void v_free_stack(stack_t **head);
 void v_div(stack_t **head, unsigned int increament);
