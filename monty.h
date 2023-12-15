@@ -42,28 +42,28 @@ typedef struct instruction_s
 char STATUS[2];
 int if_stack;
 
-stack_t *v_add_stack(stack_t **head, const int n)
-stack_t *v_add_queue(stack_t **head, const int n)
-int v_char_to_number(char *strn, int *number)
-int _get_function_stack(char **tokens, stack_t **head, unsigned int increament)
-unsigned int _isnumber(char *str)
-void v_mod(stack_t **head, unsigned int increament)
-void v_ts_handler(char *ptr_line)
-void v_mul(stack_t **head, unsigned int increament)
-void v_pstr(sstack_t **head, unsigned int increament)
-char **v_strtok(char **tok, char *strn)
-void v_free_stack(stack_t **head)
-void v_div(stack_t **head, unsigned int increament)
-void v_queue(stack_t **head, unsigned int increament)
-void v_rotl(stack_t **head, unsigned int increament)
-void v_rotr(stack_t **head, unsigned int increament)
-void v_pall(stack_t **head, __attribute__((unused))unsigned int increament)
-void v_push(stack_t **head, unsigned int increament)
-void v_pint(stack_t **head, unsigned int increament)
-void v_pop(stack_t **head, unsigned int increament)
-void v_swap(stack_t **head, unsigned int increament)
-void v_add(stack_t **head, unsigned int increament)
-void v_nop(stack_t **head, unsigned int increament)
-void v_pchar(stack_t **head, unsigned int increament)
+stack_t *v_add_stack(stack_t **head, const int n);
+stack_t *v_add_queue(stack_t **head, const int n);
+int v_char_to_number(char *strn, int *number);
+int _get_function_stack(char **tokens, stack_t **head, unsigned int increament);
+unsigned int _isnumber(char *str);
+void v_mod(stack_t **head, unsigned int increament);
+void v_ts_handler(char *ptr_line);
+void v_mul(stack_t **head, unsigned int increament);
+void v_pstr(sstack_t **head, unsigned int increament);
+char **v_strtok(char **tok, char *strn);
+void v_free_stack(stack_t **head);
+void v_div(stack_t **head, unsigned int increament);
+void v_queue(stack_t **head, unsigned int increament);
+void v_rotl(stack_t **head, unsigned int increament);
+void v_rotr(stack_t **head, unsigned int increament);
+void v_pall(stack_t **head, __attribute__((unused))unsigned int increament);
+void v_push(stack_t **head, unsigned int increament);
+void v_pint(stack_t **head, unsigned int increament);
+void v_pop(stack_t **head, unsigned int increament);
+void v_swap(stack_t **head, unsigned int increament);
+void v_add(stack_t **head, unsigned int increament);
+void v_nop(stack_t **head, unsigned int increament);
+void v_pchar(stack_t **head, unsigned int increament);
 
 #endif
