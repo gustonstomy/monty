@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		v_ts_handler(buffer);
 		if (strcmp(buffer, "\n") != 0)
 		{	tokens = v_strtok(tokens, buffer);
-			gf = get_function_stack(tokens, &stack, lines);
+			gf = _get_function_stack(tokens, &stack, lines);
 			if (gf == 1)
 			{	free(tokens), free(buffer), v_free_stack(&stack), fclose(fd);
 				dprintf(2, "L%d: usage: push integer\n", lines), exit(EXIT_FAILURE);
