@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_swap - it pops an element in a stack
+ * _swap - it pops an element in a stack
  * @head: a pointer to a pointer of stack
  * @increament: element to pop
  * Return: Nothing
  */
-void v_swap(stack_t **head, unsigned int increament)
+void _swap(stack_t **head, unsigned int increament)
 {
 	stack_t *el_swap = NULL;
 
