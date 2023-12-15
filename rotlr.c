@@ -7,7 +7,7 @@
  */
 void v_rotr(stack_t **head, unsigned int increament)
 {
-	shead_t *last_node, *prev_last_node;
+	stack_t *last_node, *prev_last_node;
 	(void)increament;
 
 	if (*head && (*head)->next)
