@@ -12,7 +12,7 @@ void v_add(stack_t **head, unsigned int increament)
 	if (*head && (*head)->next)
 	{
 		total = ((*head)->n + (*head)->next->n);
-		v_pop(head, 0);
+		_pop(head, 0);
 		(*head)->n = total;
 	}
 	else
