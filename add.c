@@ -18,6 +18,6 @@ void add(stack_t **head, unsigned int increament)
 	else
 	{
 		STATUS[0] = 'F';
-		printf(2, "L%d: can't add, stack too short\n", increament);
+		printf("L%d: can't add, stack too short\n", increament);
 	}
 }
