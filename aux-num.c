@@ -64,6 +64,6 @@ unsigned int _isnumber(char *strn)
 		{
 			return (0);
 		}
-		retrun(1);
+		return(1);
 	}
 }
