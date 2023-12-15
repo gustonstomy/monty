@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * v_pint - to print the first element of a stack
+ * _pint - to print the first element of a stack
  * @head: pointer to pointer to stack
  * @increament: value to print
  * Return: Nothing
  */
-void v_pint(stack_t **head, unsigned int increament)
+void _pint(stack_t **head, unsigned int increament)
 {
 	if (*head)
 		printf("%d\n", (*head)->n);
